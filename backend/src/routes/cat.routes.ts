@@ -3,7 +3,7 @@ import catController from "../controllers/cat.controller.ts";
 
 const catRouter = Router();
 
-catRouter.get("/recommended", catController.recommendCats);
+catRouter.post("/recommended", catController.recommendCats);
 
 catRouter.post("/create", catController.createCat);
 
