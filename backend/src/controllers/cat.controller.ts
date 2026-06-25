@@ -53,6 +53,10 @@ const searchCat = async (req: Request, res: Response) => {
 }
 
 const recommendCats = async (req: Request, res: Response) => {
+    console.log("========================================")
+    console.log(req.body);
+    console.log("========================================")
+
     const { kidsFriendly, appartmentFriendly } = req.body;
 
     const result = await catService.recommend(kidsFriendly, appartmentFriendly);
