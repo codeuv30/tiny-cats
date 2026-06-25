@@ -11,6 +11,6 @@ catRouter.get("/search/all", catController.searchCat);
 
 catRouter.get("/:id", catController.getCatById);
 
-// catRouter.post("/recommended");
+catRouter.post("/recommended", catController.recommendCats);
 
 export default catRouter;
